@@ -1,9 +1,10 @@
 import { Link } from "@remix-run/react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pt-8">
-      <nav className="bg-[#ECEDED]/85 py-4">
+      <nav className="bg-[#ECEDED]/85 ">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <Link to="/" className="nav-text text-4xl text-gray-800">
             CultOS
@@ -28,13 +29,10 @@ const Navbar = () => {
             >
               Alpha
             </Link>
-            {/* <Button
-              variant="secondary"
-              className="bg-gray-800 text-white hover:bg-gray-700"
-            >
-              Connect
-            </Button> */}
           </div>
+          <Button className="bg-gray-800 text-white hover:bg-gray-700">
+            Launch App
+          </Button>
         </div>
       </nav>
     </header>

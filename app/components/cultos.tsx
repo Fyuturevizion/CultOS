@@ -1,3 +1,5 @@
+import { Button } from "./ui/button";
+
 export const CultOSSection = () => {
   return (
     <div className="text-white">
@@ -21,7 +23,7 @@ export const CultOSSection = () => {
         <div className="relative z-10 w-full max-w-3xl">
           <div className="grid md:grid-cols-2 bg-gradient-to-r from-gray-100 to-gray-900 rounded-2xl overflow-hidden shadow-2xl opacity-85">
             {/* Left Panel */}
-            <div className="bg-[#ECEDED] text-black p-8 space-y-6">
+            <div className="bg-[#ECEDED] text-black p-8 space-y-6 flex flex-col justify-between">
               <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
                 Agenda 2026
               </h1>
@@ -30,9 +32,9 @@ export const CultOSSection = () => {
                 pioneers forging formidable alliances building efficient access
                 to on-chain alpha, LP Pump pools, Aigents of the Cabal.
               </p>
-              {/* <Button className="bg-black text-white hover:bg-gray-800 transition-colors duration-300 text-sm">
+              <Button className="bg-black text-white hover:bg-gray-800 transition-colors duration-300 text-sm w-full">
                 Agenda 2026
-              </Button> */}
+              </Button>
             </div>
 
             {/* Right Panel */}
