@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Fiorello CG Condensed";
+    src: local("Fiorello CG Condensed"),
+      url("./fonts/fiorello-cg-condensed-regular.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  @apply bg-black;
+
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  /* padding-top: 50px; */
+}
+
+.nav-text {
+  font-family: "Fiorello CG Condensed", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.navbar-fixed-top {
+  top: 0px;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  z-index: 1030;
+  min-height: 50px;
+  /* margin-bottom: 20px; */
+  border: 1px solid black;
+  background: white;
+  display: block;
+  clear: both;
+}
